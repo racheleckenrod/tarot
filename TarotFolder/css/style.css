@@ -1,0 +1,11 @@
+body {
+    margin: 10%
+}
+
+/* button{
+    background: ;
+} */
+
+.orientation {
+    transform: rotate(180deg);
+}
