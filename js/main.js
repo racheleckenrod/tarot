@@ -7,8 +7,8 @@ fetch("https://tarot-api-3hv5.onrender.com/api/v1/cards/random?n=10")
     console.log(response)
     // handle ten random cards
     console.log(response.cards[0])
-    document.querySelector('h1').innerText = response.cards[0].name
-    document.querySelector('h3').innerText = response.cards[0].desc
+    document.querySelector('h1').innerText += "  " + response.cards[0].name
+    document.querySelector('h3').innerText += "  " + response.cards[0].desc
     document.querySelector('.upright').innerText += "  " + response.cards[0].meaning_up
     document.querySelector('.reversed').innerText += "   " + response.cards[0].meaning_rev
     document.querySelector('img').src = `img/big/${response.cards[0].name_short}.jpg`
