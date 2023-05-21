@@ -12,6 +12,7 @@ fetch("https://tarot-api-3hv5.onrender.com/api/v1/cards/random?n=10")
     document.querySelector('.upright').innerText += "  " + response.cards[0].meaning_up
     document.querySelector('.reversed').innerText += "   " + response.cards[0].meaning_rev
     document.querySelector('img').src = `img/big/${response.cards[0].name_short}.jpg`
+    document.querySelector('.shuffle').innerText = "Welcome, scroll down for your reading."
 
     console.log(`${response.cards[0].name_short}`)
 
